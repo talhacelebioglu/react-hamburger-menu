@@ -1,0 +1,91 @@
+.navbar {
+  background: linear-gradient(to right, #536976, #292e49);
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.hamburger-menu {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #fafafa;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease 0.2s;
+}
+
+.overlay.active {
+  opacity: 1;
+}
+
+.nav-menu {
+  background: linear-gradient(to bottom, #536976, #292e49);
+  width: 270px;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  right: -100%;
+  transition: 0.7s;
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: 0.35s;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px;
+  list-style: none;
+  height: 55px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 7px;
+}
+
+.nav-text a:hover {
+  background-color: #77a1d3;
+  transition: 0.3s;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-close {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+span {
+  margin-left: 12px;
+}
